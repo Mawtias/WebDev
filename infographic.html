@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+      }
+      p{
+        color: white;
+        text-align: center;
+      }
+      #symbol{
+        width: 50px;
+        height: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+      }
+
+      ol{
+        color: white;
+        font-size: 18px;
+       
+      }
+
+      #header {
+        background-image: url("imgs/img1.png");
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        background-color: rgb(191, 191, 191);
+        background-size: 38%;
+        min-height:  400px;
+        font-family: 'Poppins';
+      }
+
+     
+      h3{
+        max-width: 80%;
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        padding-right: 12%;
+      }
+
+      #title {
+        margin: 0px auto;
+        padding: 15px;
+        color: black;
+        text-align: center;
+        font-family: 'Poppins';
+      }
+    
+      #colorName {
+        text-align: center;
+        margin: 0px auto;
+        padding-bottom: 10px;
+        color: white;
+        
+      }
+
+      .container{
+        height: 500px;
+        margin: 0px;
+        padding: 0px;
+      }
+
+      #boxBlue {
+        width: 20%;
+        height: 100%;
+        margin: -2px;
+        padding: 20px;        
+        display: inline-block;
+        font-family: 'Poppins';
+        background-image: url("imgs/island.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+
+      #boxGreen {
+        width: 20%;
+        height: 100%;
+        margin: -2px;
+        padding: 20px;
+        background-image: linear-gradient(to bottom right, #63d471, #005f23);
+        display: inline-block;
+        font-family: 'Poppins';
+        background-image: url("imgs/forest.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        
+      }
+
+      #boxRed {
+        width: 20%;
+        height: 100%;
+        margin: -2px;
+        padding: 20px;
+        background-image: linear-gradient(to bottom right, #f73a29, #9a0a0a);
+        display: inline-block;
+        font-family: 'Poppins';
+        background-image: url("imgs/mountain.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+
+      #boxBlack {
+        width: 20%;
+        height: 100%;
+        margin: -2px;
+        padding: 20px;
+        background-image: linear-gradient(to bottom right, #b589d6, #7333b3);
+        display: inline-block;
+        font-family: 'Poppins';
+        background-image: url("imgs/swamp.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+      
+      #boxWhite {
+        width: 20%;
+        height: 100%;
+        margin: -2px;
+        padding: 20px;
+        background-image: linear-gradient(to bottom right, #fafaee, #b99c87);
+        display: inline-block;
+        font-family: 'Poppins';
+        background-image: url("imgs/plains.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        
+      }
+
+      @media (max-width: 1023px) {
+        ul{
+          font-size:x-large;
+        }
+        #boxBlue {
+          width: 100%;
+          max-width: 100%;
+          margin: 0px;
+        }
+        #boxGreen {
+          width: 100%;
+          max-width: 100%;
+          margin: 0px;
+          
+        }
+        #boxRed {
+          width: 100%;
+          max-width: 100%;
+          margin: 0px;
+        }
+        #boxBlack{
+          width: 100%;
+          max-width: 100%;
+          margin: 0px;     
+        }
+        #boxWhite {
+          width: 100%;
+          max-width: 100%;
+          margin: 0px;
+        }
+
+        #header{
+          background-size: 40%;
+        }
+
+        #symbol{
+        width: 100px;
+        height: 100px;        
+      }
+
+      ol {
+        text-align: center;
+        list-style-position: inside;
+        padding-inline-start: 0px;
+        font-size:x-large;
+      }
+      }
+
+      @media (max-width: 426px) {
+        #header{
+          text-align: center ;
+          background-position: bottom;
+          padding-bottom: 35%; 
+          background-size: 50%;         
+        }
+        h3{
+          max-width: fit-content;
+          padding: 0px;
+          margin: 15px;
+        }
+        #symbol{
+        width: 70px;
+        height: 70px;
+        margin-top: 30px;
+      }
+
+      ol {
+        text-align: center;
+        list-style-position: inside;
+        padding-inline-start: 0px;
+        font-size: x-large;
+      }
+
+      }
+    </style>
+  </head>
+  <body>
+    <div id="header">
+      <h1 id="title">Which color are you in Magic the Gathering?</h1>
+      <h3>
+        Magic the gathering is a fantasy card game invented in 1993 by Richard Garfield, where you invoke monsters and allies
+        to help you win a battle. The main resource in the game is called MANA and it comes in five different colors, each one with
+        its own philosophy and characteristics. It is possible to define anyone within a unique color combination, even for 
+        those who have never played the game. <br><br>Let's find out yours!
+      </h3>
+    </div>
+
+    <div class="container">
+
+        <div id="boxBlue">
+          <h1 id="colorName"> Blue</h1>
+          <ol>
+            <li>Curiosity</li>
+            <li>Knowledge</li>
+            <li>Deceit</li>
+            <li>Caution</li>
+            <li>Deliberation</li>
+            <li>Perfection</li>
+            <li>Islands</li>
+          </ol>          
+          <br>
+          <img id="symbol" src="imgs/blue.png" alt="">
+        </div>
+        
+        <div id="boxGreen">
+          <h1 id="colorName">Green</h1>
+          <ol>
+            <li>Nature</li>
+            <li>Instinct</li>
+            <li>Wildlife</li>
+            <li>Connection</li>
+            <li>Spirituality</li>
+            <li>Tradition</li>
+            <li>Forests</li> 
+          </ol>         
+          <br>
+          <img id="symbol" src="imgs/green.png" alt="">
+        </div>
+
+        <div id="boxRed">
+          <h1 id="colorName">Red</h1>
+          <ol>
+            <li>Freedom</li>
+            <li>Action</li>
+            <li>Impulse</li>
+            <li>Destruction</li>
+            <li>Emotion</li>
+            <li>Damage</li>
+            <li>Mountains</li> 
+          </ol>         
+          <br>
+          <img id="symbol" src="imgs/red.png" alt="">
+        </div>
+
+        <div id="boxBlack">
+          <h1 id="colorName">Black</h1>
+          <ol>
+            <li>Power</li>
+            <li>Self-interest</li>
+            <li>Death</li>
+            <li>Sacrifice</li>
+            <li>Darkness</li>
+            <li>Amorality</li>
+            <li>Swamps</li>
+          </ol>
+          <br>
+          <img id="symbol" src="imgs/black.png" alt="">
+        </div>
+
+        <div id="boxWhite">
+          <h1 id="colorName">White</h1>
+          <ol>
+            <li>Peace</li>
+            <li>Organization</li>
+            <li>Law</li>
+            <li>Selflessness</li>
+            <li>Equality</li>
+            <li>Structure</li>
+            <li>Plains</li>
+          </ol>          
+          <br>
+          <img id="symbol" src="imgs/white.png" alt="">
+        </div>
+    
+      </div>
+  </body>
+</html>
