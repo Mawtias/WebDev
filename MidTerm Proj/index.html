@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+      }
+
+      body{
+        height: 100vh;
+        display: flex;
+      }
+
+      #sidebar {
+        width: 13%;
+        height: 100%;
+        background-color: #1E173E;
+        /* display: inline-block; */
+        border-right: solid #2C2454 .3px ;
+        font-family: 'Rubik';
+        
+      }
+
+      #options {        
+        height: auto;
+        width: 100%;
+        color: white;        
+        display:flex; 
+        color: #B2B3CE;
+      }
+
+      #options:hover{
+        background-color: #252046;
+        cursor: pointer;
+      }
+
+      #logo {
+        width: 100%;  
+        border-bottom: solid #2C2454 .3px ;
+        border-right: solid #2C2454 .3px ;
+      }
+
+      #profile{
+        margin: 7px;
+        width: 15%;
+        display: block;      
+      }
+
+      p{
+        font-size: 20px
+      }
+      
+      body{
+        /*background-image:url(background.jpg);*/
+        background-repeat: no-repeat;
+        background-size: 100%;        
+        background-color:#140f29;
+          
+      }
+
+      #topbar{
+        padding-left: 13%;
+        background-color: white;
+        position: relative;
+      }
+
+
+      .main {
+        width: 87%;
+        background-color: #171038;
+        
+      }
+
+      .main h1{
+        padding-top: 15%;
+        color: white;
+        text-align: center;
+        font-size: 70px;
+        font-family: 'Bebas Neue' ;
+      }
+
+      .main h1 p{
+        font-family: 'Rubik';
+        color: #B2B3CE;
+      }
+
+      #navbar{
+        height:8%;
+        background-color:#1E173E;
+        border-bottom: solid #2C2454 .3px ;
+      }
+
+      #navbar input{
+        margin: 10px;
+        height: 50%;
+        border-radius: 5px;
+        color: rgb(181, 177, 177);
+        width: 20%;
+      }
+
+      a{
+        text-decoration: none;
+      }    
+
+
+      @media (max-width: 770px){
+       
+        #logo{
+          height:200%;
+        }
+        
+        #options p{
+          visibility:hidden;
+        }
+        #profile{
+          width: 100px;
+          padding-left: 10%;
+          ;
+        }
+        #navbar{
+          height: 6%;
+        }
+        #navbar input{
+          width: 40%;
+        }
+        .main h1{
+          font-size: 30px;
+          margin: 10px;
+        }
+        .main p{
+          font-size: 15px;
+          
+        }
+      }
+    </style>
+    
+  </head>
+  <body>
+  
+   
+    <div id="sidebar">
+    
+      <a id="options" href="index.html">
+        <img id="logo" src="logo.png" alt="logo" />
+      </a>
+
+      <a id="options" href="profile.html">        
+        <img id="profile" src="https://cdn.mobalytics.gg/assets/common/icons/side-menu-icon/profile.svg" alt="logo"/>        
+        <p style="padding: 10px;">Profile </p>
+      </a>
+
+      <a id="options" href="cardGallery.html">        
+        <img id="profile" src="	https://cdn.mobalytics.gg/assets/common/icons/side-menu-icon/card-gallery.svg" alt="logo"/>        
+        <p style="padding: 10px;">Card Gallery </p>
+      </a>
+      
+      <a id="options" href="deckLibrary.html">        
+        <img id="profile" src="https://cdn.mobalytics.gg/assets/common/icons/side-menu-icon/deck-gallery.svg" alt="logo"/>        
+        <p style="padding: 10px;">Deck Library </p>
+      </a>
+
+      <a id="options" href="deckLibrary.html">        
+        <img id="profile" src="https://cdn.mobalytics.gg/assets/common/icons/side-menu-icon/deck-manager.svg" alt="logo"/>        
+        <p style="padding: 10px;">Deck Manager</p>
+      </a>
+
+      <a id="options" href="deckLibrary.html">        
+        <img id="profile" src="https://cdn.mobalytics.gg/assets/common/icons/side-menu-icon/deck-builder.svg" alt="logo"/>        
+        <p style="padding: 10px;">Deck Builder</p>
+      </a>
+
+      <a id="options" href="guides.html">        
+        <img id="profile" src="https://cdn.mobalytics.gg/assets/common/icons/side-menu-icon/guides.svg" alt="logo"/>        
+        <p style="padding: 10px;">Guides</p>
+      </a>
+
+      <a id="options" href="leaderboard.html">        
+        <img id="profile" src="	https://cdn.mobalytics.gg/assets/common/icons/side-menu-icon/leaderboard.svg" alt="logo"/>        
+        <p style="padding: 10px;">Leaderboard</p>
+      </a>
+
+      <a id="options" href="tier.html">        
+            <img id="profile" src="https://cdn.mobalytics.gg/assets/common/icons/side-menu-icon/meta-tier-list.svg" alt="logo"/>        
+            <p style="padding: 10px;">Meta Tier List</p>
+      </a>
+
+    </div>  
+      
+    <div class="main">
+      <div id="navbar">
+        <input type="text" placeholder="Search cards...">
+        </input>
+      </div>
+
+      <h1>WIN MORE AT 
+        <span style="color:rgb(242, 191, 67)";> Spellslinger</span>
+        <p>This website is the ultimate gaming companion that helps players of all 
+          skill levels improve and climb in Spellslinger</p>
+      </h1>
+      
+    </div>
+  
+</body>
+</html>

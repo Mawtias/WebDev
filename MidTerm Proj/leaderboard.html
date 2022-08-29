@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+      }
+
+      body{
+        height: 100vh;
+        display: flex;
+      }
+
+      #sidebar {
+        width: 13%;
+        height: 100%;
+        background-color: #1E173E;
+        /* display: inline-block; */
+        border-right: solid #2C2454 .3px ;
+        font-family: 'Rubik';
+      }
+
+      #options {        
+        height: auto;
+        width: 100%;
+        color: white;
+        display: flex;
+        color: #B2B3CE;
+      }
+
+      #options:hover{
+        background-color: #252046;
+        cursor: pointer;
+      }
+
+      #logo {
+        width: 100%;  
+        border-bottom: solid #2C2454 .3px ;
+        border-right: solid #2C2454 .3px ;
+      }
+
+      #profile{
+        margin: 7px;
+        width: 15%;
+        display: block;        
+      }
+      p{
+        font-size: 20px
+      }
+      
+      body{
+        /*background-image:url(background.jpg);*/
+        background-repeat: no-repeat;
+        background-size: 100%;        
+        background-color:#140f29;
+          
+      }
+
+      #topbar{
+        padding-left: 13%;
+        background-color: white;
+        position: relative;
+      }
+
+
+      .main {
+        width: 87%;
+        background-color: #171038;
+        
+      }
+
+      #navbar{
+        height:8%;
+        background-color:#1E173E;
+        border-bottom: solid #2C2454 .3px ;
+      }
+
+      #navbar input{
+        margin: 10px;
+        height: 50%;
+        border-radius: 5px;
+        color: rgb(181, 177, 177);
+        width: 20%;
+      }
+
+      .profile h1{
+        margin:10px
+      }
+
+      .imgs{
+        padding-top: 3%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        align-items: center;
+        
+      }
+
+      .card{
+        width: 70%;
+        margin: 10%;
+      }
+
+      .card:hover{
+        width: 75%;
+        margin: 5%;
+      }
+      
+      a{
+        text-decoration: none;
+        
+      }
+
+      h1{
+        padding-top: 10px;
+        padding-left: 15px;
+        font-size: 50px;
+      }
+      #text{
+        margin: 30px;
+        font-family:Arial, Helvetica, sans-serif;
+        color: white;
+        
+      }
+
+      #customers {
+        margin: 40px;
+        font-family: Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        width: 50%;
+      }
+
+      #customers td, #customers th {
+        border: 1px solid #2C2454;
+        padding: 8px;
+    }
+
+      #customers tr:nth-child(even){background-color: #594e8e;}
+      #customers tr:nth-child(odd){background-color: #534492;}
+
+      #customers th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color:   #3a2c78;
+        color: white;
+      }
+
+      @media (max-width: 770px){
+       
+       #logo{
+         height:200%;
+       }
+       
+       #options p{
+         visibility:hidden;
+       }
+       #profile{
+         width: 100px;
+         padding-left: 10%;
+         ;
+       }
+       #navbar{
+         height: 6%;
+       }
+       #navbar input{
+         width: 40%;
+       }
+       .main h1{
+         font-size: 30px;
+         margin: 10px;
+       }
+       .main p{
+         font-size: 15px;         
+       }
+       #customers {
+       margin: 4%;
+      }
+     }
+
+    </style>
+  </head>
+  <body>
+  
+   
+    <div id="sidebar">
+    
+      <a id="options" href="index.html">
+        <img id="logo" src="logo.png" alt="logo" />
+      </a>
+
+      <a id="options" href="profile.html">        
+        <img id="profile" src="https://cdn.mobalytics.gg/assets/common/icons/side-menu-icon/profile.svg" alt="logo"/>        
+        <p style="padding: 10px;">Profile </p>
+      </a>
+
+      <a id="options" href="cardGallery.html">        
+        <img id="profile" src="	https://cdn.mobalytics.gg/assets/common/icons/side-menu-icon/card-gallery.svg" alt="logo"/>        
+        <p style="padding: 10px;">Card Gallery </p>
+      </a>
+      
+      <a id="options" href="deckLibrary.html">        
+        <img id="profile" src="https://cdn.mobalytics.gg/assets/common/icons/side-menu-icon/deck-gallery.svg" alt="logo"/>        
+        <p style="padding: 10px;">Deck Library </p>
+      </a>
+
+      <a id="options" href="deckLibrary.html">      
+        <img id="profile" src="https://cdn.mobalytics.gg/assets/common/icons/side-menu-icon/deck-manager.svg" alt="logo"/>        
+        <p style="padding: 10px;">Deck Manager</p>
+      </a>
+
+      <a id="options" href="deckLibrary.html">       
+        <img id="profile" src="https://cdn.mobalytics.gg/assets/common/icons/side-menu-icon/deck-builder.svg" alt="logo"/>        
+        <p style="padding: 10px;">Deck Builder</p>
+      </a>
+
+      <div id="options" href="guides.html">         
+        <img id="profile" src="https://cdn.mobalytics.gg/assets/common/icons/side-menu-icon/guides.svg" alt="logo"/>        
+        <p style="padding: 10px;">Guides</p>
+      </div>
+
+      <a id="options" href="leaderboard.html">          
+        <img id="profile" src="	https://cdn.mobalytics.gg/assets/common/icons/side-menu-icon/leaderboard.svg" alt="logo"/>        
+        <p style="padding: 10px;">Leaderboard</p>
+      </a>
+
+      <a id="options" href="tier.html">        
+            <img id="profile" src="https://cdn.mobalytics.gg/assets/common/icons/side-menu-icon/meta-tier-list.svg" alt="logo"/>        
+            <p style="padding: 10px;">Meta Tier List</p>
+      </a>
+
+    </div>  
+      
+    <div class="main">
+      <div id="navbar">
+        <input type="text" placeholder="Search cards...">
+        </input>
+      </div>
+
+      <div class="profile">
+        <h1 style="font-family: Rubik; color:white;">Leaderboard</h1>
+        <p id="text">Mythic players in the America server</p>
+        
+        <table id="customers">
+          <tr>
+            <th>Player</th>
+            <th>Rank</th>
+            <th>Points</th>            
+          </tr>
+          <tr>
+            <td>Chaguelegdog</td>
+            <td>1st</td>
+            <td>1096</td>
+          </tr>
+          <tr>
+            <td>Tobu</td>
+            <td>2nd</td>
+            <td>1023</td>
+          </tr>
+          <tr>
+            <td>Lynx</td>
+            <td>3rd</td>
+            <td>975</td>
+          </tr>
+          <tr>
+            <td>BillyLindo</td>
+            <td>4th</td>
+            <td>321</td>
+          </tr>
+          <tr>
+            
+      </div>
+    </div>
+  
+</body>
+</html>
